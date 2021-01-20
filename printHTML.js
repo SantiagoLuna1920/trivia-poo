@@ -14,7 +14,6 @@ export default class Print {
         }
         question_correctC=[];
         question_correctC.push(...question_correct);
-        console.log(question_correctC)
         question_correct=[];
         const button = document.createElement("button");
         const selectT = document.getElementById("types").value;
@@ -36,7 +35,7 @@ export default class Print {
                                                 ${questions.results[i].question}
                                                     <br>
                                                         <br>
-                                                            <label style="color: blue;" for="select${i}" class="form-label">Select te correct question</label>
+                                                            <label style="color: blue;" for="select${i}" class="form-label">Choose your answer</label>
                                                                 <select id="select${i}" class="form-control">
                                                                     <option id="${copy[0]}" value="${copy[0]}">${copy[0]}</option>
                                                                     <option id="${copy[1]}" value="${copy[1]}">${copy[1]}</option>
@@ -49,7 +48,7 @@ export default class Print {
                                     </div>`;
 
                                 }
-                                container.lastElementChild.innerHTML+=`<button id="buttonC" class="btn btn-primary button-add form-check">Enviar respuestas</button>`;
+                                container.lastElementChild.innerHTML+=`<button id="buttonC" class="btn btn-primary button-add form-check">Submit responses</button>`;
                             } else {
                                 let booleano=["False","True"];
                                 for (let i=0; i<questions.results.length; i++) {
@@ -70,13 +69,13 @@ export default class Print {
                                                             </div>`;
 
                                     }
-                                    container.lastElementChild.innerHTML+=`<button id="buttonC" class="btn btn-primary button-add form-check">Enviar respuestas</button>`;
+                                    container.lastElementChild.innerHTML+=`<button id="buttonC" class="btn btn-primary button-add form-check">Submit responses</button>`;
                         }
             } else {    
                                 container.innerHTML+=`<div class="col-md-6" style="margin: auto;">
                                                                 <div class="alert alert-info">
                                                                     <div class="alert-body">
-                                                                    Sin resultados, no se pudieron devolver los resultados. La API no tiene suficientes preguntas para su consulta. (Por ejemplo, pedir 50 preguntas en una categoría que solo tiene 20)
+                                                                    With no results, the results could not be returned. The API does not have enough questions for your query. (For example, asking 50 questions in a category that only has 20)
                                                                     </div>
                                                                 </div>
                                                      </div>`;

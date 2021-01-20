@@ -20,7 +20,7 @@ const form2 = document.getElementById("container-Questions");
                 form2.innerHTML=`<div class="col-md-6" style="margin: auto;">
                                         <div class="alert alert-info">
                                                 <div class="alert-body">
-                                                        Debes rellenar los campos necesarios para generar tu QUIZ.
+                                                        You must fill in the necessary fields to generate your QUIZ.
                                                 </div>
                                         </div>
                                 </div>`;
