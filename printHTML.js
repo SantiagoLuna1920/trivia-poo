@@ -103,7 +103,7 @@ export default class Print {
         form2.innerHTML=`<div class="col-md-6" style="margin: auto;">
                                 <div class="alert alert-info">
                                         <div class="alert-body">
-                                                Tienes ${cont} respuestas correctas de un total de ${question_correctC.length} preguntas.
+                                                You have ${cont} correct answers out of a total of ${question_correctC.length} questions.
                                         </div>
                                  </div>
                         </div>`;
