@@ -1,0 +1,23 @@
+#container {
+    width: 50%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.question {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.question2 {
+    margin-left: 10px;
+    width: 50%;
+}
+
+.button-add {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

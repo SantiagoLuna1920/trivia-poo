@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia-POO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    
+    <form id="container">
+        <div class="mb-3">
+          <label for="questionC" class="form-label">Cantidad de preguntas</label>
+          <input value="10" min="1" max="50" type="number" class="form-control" id="questionC" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="categories" class="form-label">Categorias</label>
+          <select name="categories" class="form-control" id="categories">
+            <option value="select-categories">Seleccione la categoria</option>  
+
+          </select>
+        </div>
+        <div class="mb-3">
+            <label for="types" class="form-label">Tipo de preguntas</label>
+            <select name="types" class="form-control" id="types">
+              <option value="select-types">Seleccione el tipo de preguntas</option>
+                <option value="boolean">Verdadero o falso</option>
+                <option value="multiple">Seleccion multiple</option>
+            </select>
+        </div>
+        <div class="mb-3">
+          <label for="difficulty" class="form-label">Dificultad</label>
+          <select name="difficulty" class="form-control" id="difficulty">
+            <option value="select-difficulty">Seleccione la dificultad</option>
+              <option value="easy">Facil</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+          </select>
+      </div>
+        <button class="btn btn-primary">Generar preguntas</button>
+      </form>
+
+      <form id="container-Questions" class="question">
+
+      </form>
+
+      <div style="height: 130px;">
+
+      </div>
+
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./printHTML.js"></script>
+    <script type="module" src="./getQ.js"></script>
+
+</body>
+</html>
