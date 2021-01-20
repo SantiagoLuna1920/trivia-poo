@@ -34,4 +34,5 @@ const form2 = document.getElementById("container-Questions");
         form2.addEventListener("submit",(event)=> {
         event.preventDefault();
         Print.printValidation();
+        console.log("xd")
                 })
